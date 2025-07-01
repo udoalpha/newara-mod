@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-12 00:18:38.324243",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_tqso",
+  "is_child",
+  "column_break_ewwe",
+  "standard",
+  "section_break_pqrf",
+  "label",
+  "column_break_vgoc",
+  "workspace",
+  "section_break_iwcf",
+  "nav_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nav_items",
+   "fieldtype": "Table",
+   "label": "Nav Items",
+   "options": "Module Nav Item"
+  },
+  {
+   "fieldname": "workspace",
+   "fieldtype": "Link",
+   "label": "Workspace",
+   "options": "Workspace"
+  },
+  {
+   "fieldname": "column_break_vgoc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "standard",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Standard"
+  },
+  {
+   "fieldname": "section_break_iwcf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tqso",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ewwe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pqrf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_child",
+   "fieldtype": "Check",
+   "label": "Is Child"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-18 03:17:49.984931",
+ "modified_by": "Administrator",
+ "module": "NEWARA",
+ "name": "Module Nav",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "label,workspace",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}
