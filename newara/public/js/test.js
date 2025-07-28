@@ -31,6 +31,7 @@ const intervalId = setInterval(() => {
  * Adjusts the layout and styling of the page-actions container.
  */
 function setupPageActions() {
+    console.log("Page setup")
     const pageActions = document.querySelector('#page-Workspaces .page-actions');
     if (!pageActions) return;
 
@@ -197,7 +198,11 @@ function handleRouteChange() {
     const moduleNavContainer = document.querySelector('#module-nav-container');
     if (!moduleNavContainer) return;
 
-    const moduleNav = frappe.boot.module_nav.sort((a, b) => a.label.localeCompare(b.label))  || [];
+    console.log("Sorting")
+    const moduleNav = (frappe.boot.module_nav || []).sort((a, b) => {
+        return (a.index || 0) - (b.index || 0);
+    }); // frappe.boot.module_nav.sort((a, b) => a.label.localeCompare(b.label))  || [];
+
     const filteredDropdowns = moduleNav
         .filter(item => item.workspace === label)
         .map(item => createDropdown(item.label, item.name, 'non-standard-module'))
@@ -217,18 +222,13 @@ function renderMenuItems() {
     let pageItems = frappe.boot.main_menu_items.sort((a, b) => a.label.localeCompare(b.label)) ;
 
     pageItems.forEach(item => {
-        body += `<a href="/doctype/${this.convertToHyphenCase(item.link_to)}"><div class="d-flex flex-column justify-content-center align-items-center">
+        body += `<a href="/app/${this.convertToHyphenCase(item.link_to)}"><div class="d-flex flex-column justify-content-center align-items-center">
             <div><img src="${item.icon}" alt="${item.label}" style="width: 48px; height: 48px; object-fit: cover;"></div>
             <h2 class="mt-3">${item.label}</h2>
         </div></a>`;
     });
 
-    let mainActionBtn = `<div class="d-flex flex-column justify-content-center align-items-center">
-        <button class="btn p-2 mt-5" style="background-color: #714b67; border-radius: 32px; color: white; border: none;">Main Action Button</button>
-    </div>`
-
-
-    body = `<div class="d-flex flex-wrap flex-grow-1 rounded-lg"  style="gap: 5rem;">${body}</div>${mainActionBtn}`;
+    body = `<div class="d-flex flex-wrap flex-grow-1 rounded-lg"  style="gap: 5rem;">${body}</div>`;
 
     $('<div id="menu-items"></div>')
         .css({"border-radius":"32px", "padding-inline":"6rem", "padding-block":"5rem", "margin-top":"1rem", "margin-bottom":"5rem", "min-height": "80vh", "overflow": "auto", "display": "flex", "flex-direction": "column", "display": "block", "background-color": "white"})

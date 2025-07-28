@@ -1,0 +1,26 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Main Menu Item",
+  "icon": "/files/cogs.png",
+  "label": "Users",
+  "link_to": "User",
+  "modified": "2025-07-12 15:55:27.260987",
+  "name": "oeo2rppp7l",
+  "parent": "v4icg671q4",
+  "parentfield": "main_menu_item",
+  "parenttype": "Main Menu"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Main Menu Item",
+  "icon": "/files/cogs.png",
+  "label": "Sales Invoice",
+  "link_to": "Sales Invoice",
+  "modified": "2025-07-12 15:55:27.260987",
+  "name": "9er7b5ip24",
+  "parent": "v4icg671q4",
+  "parentfield": "main_menu_item",
+  "parenttype": "Main Menu"
+ }
+]

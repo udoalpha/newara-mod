@@ -1,0 +1,26 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Main Menu",
+  "main_menu_item": [
+   {
+    "icon": "/files/cogs.png",
+    "label": "Users",
+    "link_to": "User",
+    "parent": "v4icg671q4",
+    "parentfield": "main_menu_item",
+    "parenttype": "Main Menu"
+   },
+   {
+    "icon": "/files/cogs.png",
+    "label": "Sales Invoice",
+    "link_to": "Sales Invoice",
+    "parent": "v4icg671q4",
+    "parentfield": "main_menu_item",
+    "parenttype": "Main Menu"
+   }
+  ],
+  "modified": "2025-07-12 15:55:27.260987",
+  "name": "v4icg671q4"
+ }
+]

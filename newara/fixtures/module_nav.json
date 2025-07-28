@@ -1,0 +1,135 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav",
+  "is_child": 0,
+  "label": "Dashboard",
+  "modified": "2025-07-08 14:28:57.724019",
+  "name": "4u6hnjttj8",
+  "nav_items": [],
+  "standard": 1,
+  "workspace": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav",
+  "is_child": 0,
+  "label": "Maintenance",
+  "modified": "2025-07-08 14:30:03.666227",
+  "name": "fqobltdtd5",
+  "nav_items": [],
+  "standard": 1,
+  "workspace": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav",
+  "is_child": 0,
+  "label": "Transactions",
+  "modified": "2025-07-08 14:34:36.681108",
+  "name": "7907uignkt",
+  "nav_items": [
+   {
+    "label": "Sales Invoice",
+    "link_to": "Sales Invoice",
+    "link_type": "DocType",
+    "nav_items": null,
+    "parent": "7907uignkt",
+    "parentfield": "nav_items",
+    "parenttype": "Module Nav"
+   },
+   {
+    "label": "Purchase Invoice",
+    "link_to": "Purchase Invoice",
+    "link_type": "DocType",
+    "nav_items": null,
+    "parent": "7907uignkt",
+    "parentfield": "nav_items",
+    "parenttype": "Module Nav"
+   }
+  ],
+  "standard": 1,
+  "workspace": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav",
+  "is_child": 0,
+  "label": "Reports",
+  "modified": "2025-07-12 16:02:04.977447",
+  "name": "o7t5hhhq31",
+  "nav_items": [
+   {
+    "label": "Gross Profit",
+    "link_to": "Gross Profit",
+    "link_type": "Report",
+    "nav_items": null,
+    "parent": "o7t5hhhq31",
+    "parentfield": "nav_items",
+    "parenttype": "Module Nav"
+   },
+   {
+    "label": "Financial Reports",
+    "link_to": "Module Nav",
+    "link_type": "DocType",
+    "nav_items": "vfehoupd6o",
+    "parent": "o7t5hhhq31",
+    "parentfield": "nav_items",
+    "parenttype": "Module Nav"
+   }
+  ],
+  "standard": 1,
+  "workspace": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav",
+  "is_child": 0,
+  "label": "Configurations",
+  "modified": "2025-07-08 14:33:01.694773",
+  "name": "s5vp7eshvr",
+  "nav_items": [
+   {
+    "label": "Company",
+    "link_to": "Company",
+    "link_type": "DocType",
+    "nav_items": null,
+    "parent": "s5vp7eshvr",
+    "parentfield": "nav_items",
+    "parenttype": "Module Nav"
+   }
+  ],
+  "standard": 1,
+  "workspace": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav",
+  "is_child": 0,
+  "label": "Financial Reports",
+  "modified": "2025-07-12 16:01:14.471704",
+  "name": "vfehoupd6o",
+  "nav_items": [
+   {
+    "label": "Sales History",
+    "link_to": "Item-wise Sales History",
+    "link_type": "Report",
+    "nav_items": null,
+    "parent": "vfehoupd6o",
+    "parentfield": "nav_items",
+    "parenttype": "Module Nav"
+   },
+   {
+    "label": "P and L",
+    "link_to": "Profit and Loss Statement",
+    "link_type": "Report",
+    "nav_items": null,
+    "parent": "vfehoupd6o",
+    "parentfield": "nav_items",
+    "parenttype": "Module Nav"
+   }
+  ],
+  "standard": 0,
+  "workspace": null
+ }
+]
