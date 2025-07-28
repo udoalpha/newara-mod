@@ -2,6 +2,7 @@ LICENSE
 README.md
 setup.py
 newara/__init__.py
+newara/boot.py
 newara/hooks.py
 newara.egg-info/PKG-INFO
 newara.egg-info/SOURCES.txt
@@ -11,5 +12,19 @@ newara.egg-info/requires.txt
 newara.egg-info/top_level.txt
 newara/config/__init__.py
 newara/newara/__init__.py
+newara/newara/doctype/__init__.py
+newara/newara/doctype/main_menu/__init__.py
+newara/newara/doctype/main_menu/main_menu.py
+newara/newara/doctype/main_menu/test_main_menu.py
+newara/newara/doctype/main_menu_item/__init__.py
+newara/newara/doctype/main_menu_item/main_menu_item.py
+newara/newara/doctype/module_nav/__init__.py
+newara/newara/doctype/module_nav/module_nav.py
+newara/newara/doctype/module_nav/test_module_nav.py
+newara/newara/doctype/module_nav_item/__init__.py
+newara/newara/doctype/module_nav_item/module_nav_item.py
+newara/newara/page/__init__.py
+newara/newara/page/custom_home/__init__.py
+newara/newara/page/main_menu_page/__init__.py
 newara/templates/__init__.py
 newara/templates/pages/__init__.py

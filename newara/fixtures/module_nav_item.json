@@ -1,0 +1,93 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav Item",
+  "label": "Sales Invoice",
+  "link_to": "Sales Invoice",
+  "link_type": "DocType",
+  "modified": "2025-07-08 14:34:36.681108",
+  "name": "rta0hf1uu9",
+  "nav_items": null,
+  "parent": "7907uignkt",
+  "parentfield": "nav_items",
+  "parenttype": "Module Nav"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav Item",
+  "label": "Gross Profit",
+  "link_to": "Gross Profit",
+  "link_type": "Report",
+  "modified": "2025-07-12 16:02:04.977447",
+  "name": "uri1au5a7a",
+  "nav_items": null,
+  "parent": "o7t5hhhq31",
+  "parentfield": "nav_items",
+  "parenttype": "Module Nav"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav Item",
+  "label": "Company",
+  "link_to": "Company",
+  "link_type": "DocType",
+  "modified": "2025-07-08 14:33:01.694773",
+  "name": "2clpg8o079",
+  "nav_items": null,
+  "parent": "s5vp7eshvr",
+  "parentfield": "nav_items",
+  "parenttype": "Module Nav"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav Item",
+  "label": "Sales History",
+  "link_to": "Item-wise Sales History",
+  "link_type": "Report",
+  "modified": "2025-07-12 16:01:14.471704",
+  "name": "aiulq3060q",
+  "nav_items": null,
+  "parent": "vfehoupd6o",
+  "parentfield": "nav_items",
+  "parenttype": "Module Nav"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav Item",
+  "label": "Purchase Invoice",
+  "link_to": "Purchase Invoice",
+  "link_type": "DocType",
+  "modified": "2025-07-08 14:34:36.681108",
+  "name": "m4s8ol5lvo",
+  "nav_items": null,
+  "parent": "7907uignkt",
+  "parentfield": "nav_items",
+  "parenttype": "Module Nav"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav Item",
+  "label": "Financial Reports",
+  "link_to": "Module Nav",
+  "link_type": "DocType",
+  "modified": "2025-07-12 16:02:04.977447",
+  "name": "06est2mfc1",
+  "nav_items": "vfehoupd6o",
+  "parent": "o7t5hhhq31",
+  "parentfield": "nav_items",
+  "parenttype": "Module Nav"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module Nav Item",
+  "label": "P and L",
+  "link_to": "Profit and Loss Statement",
+  "link_type": "Report",
+  "modified": "2025-07-12 16:01:14.471704",
+  "name": "3p1octq1ia",
+  "nav_items": null,
+  "parent": "vfehoupd6o",
+  "parentfield": "nav_items",
+  "parenttype": "Module Nav"
+ }
+]
