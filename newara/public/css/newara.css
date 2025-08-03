@@ -363,6 +363,12 @@ input[type="checkbox"]:checked {
 	height: min-content !important;
 } */
 
+@media (min-width: 768px){
+	.dropdown-menu,
+	.dropdown-toggle{
+		font-size: large !important;
+	}
+}
 
 @media (max-width: 768px ) {
 	#module-nav-container{
