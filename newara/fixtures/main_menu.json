@@ -4,6 +4,14 @@
   "doctype": "Main Menu",
   "main_menu_item": [
    {
+    "icon": "/files/finance.png",
+    "label": "Sales Invoice",
+    "link_to": "Sales Invoice",
+    "parent": "v4icg671q4",
+    "parentfield": "main_menu_item",
+    "parenttype": "Main Menu"
+   },
+   {
     "icon": "/files/cogs.png",
     "label": "Users",
     "link_to": "User",
@@ -12,15 +20,15 @@
     "parenttype": "Main Menu"
    },
    {
-    "icon": "/files/cogs.png",
-    "label": "Sales Invoice",
-    "link_to": "Sales Invoice",
+    "icon": "/files/inventory.png",
+    "label": "Stock",
+    "link_to": "Item",
     "parent": "v4icg671q4",
     "parentfield": "main_menu_item",
     "parenttype": "Main Menu"
    }
   ],
-  "modified": "2025-07-12 15:55:27.260987",
+  "modified": "2025-07-19 17:10:45.837886",
   "name": "v4icg671q4"
  }
 ]
