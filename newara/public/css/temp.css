@@ -1,9 +1,9 @@
 :root {
 	--bg-color:  #e5e8eb;
-	--btn-primary: #1c6de1;
+	--btn-primary: #16794c;
 	--btn-secondary: black;
-	--secondary: #1c6de1;
-	--navbar-bg: #1c6de1;
+	--secondary: #16794c;
+	--navbar-bg: #f1f1f1;
 	--text-btn-color: white;
     --text-color: black;
     --text-muted: black;
@@ -59,12 +59,13 @@
 }
 
 /* NAVBAR DESIGNE */
-
+.navbar,
 .navbar .navbar-expand span, 
 .navbar .navbar-expand li a,
 #navbar-breadcrumbs a,
 .navbar .nav-item button.nav-link{ 
 	color: var(--btn-default-hover-bg) !important;
+    background: #35063e;
 
 }
 
@@ -118,11 +119,11 @@ body, .page-container {
     margin-bottom: var(--margin-sm);
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
 }
 
 .sidebar-section a, .control-value a, .data-row a {
-    color: white !important;
+    color: black !important;
     text-decoration: none;
 }
 
@@ -254,7 +255,7 @@ input[type="checkbox"]:checked {
 
 .btn.btn-primary:hover {
 	background: var(--btn-default-hover-bg) !important;
-	border: solid 2px #1606f3 !important;
+	border: solid 2px var(--btn-primary) !important;
 	color: var(--text-color);
   }
 
@@ -301,14 +302,14 @@ input[type="checkbox"]:checked {
 }
 
 .btn.btn-new-doc{
-	background-color: #1c6de1 !important;
+	background-color: var(--btn-primary) !important;
 	color: var(--text-btn-color);
-	border: solid 2px #1c6de1 !important;
+	border: solid 2px var(--btn-primary) !important;
 }
 
 .btn.btn-new-doc:hover{
 	background: var(--btn-default-hover-bg) !important;
-	border: solid 2px #1c6de1 !important;
+	border: solid 2px var(--btn-primary) !important;
 	color: var(--text-color);
 }
 
