@@ -20,7 +20,7 @@ fixtures = [
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/newara/css/temp.css"
+app_include_css = "/assets/newara/css/col.css"
 app_include_js = "/assets/newara/js/ara.js"
 # app_include_js = "/assets/newara/js/newara.js"
 
