@@ -17,6 +17,7 @@ const intervalId = setInterval(() => {
     }
 
     // Once elements are available, run setup functions
+    changeButtonColor();
     addHamburger();
     enableDrawer()
     setupPageActions(); // Adjusts layout of page actions
@@ -272,3 +273,68 @@ function enableDrawer() {
         $(this).text(currentText === "Menu" ? "Close" : "Menu");
     });
 }
+
+function changeButtonColor() {
+    // Change the color of the primary button
+    const primaryButton = document.querySelector('.btn.btn-primary.btn-sm.primary-action');
+    if (primaryButton) {
+        primaryButton.style.backgroundColor = 'blue'; // Change to your desired color
+    }
+}
+
+function checkForLinkFields() {
+    // all div wrappers for Link fields
+    const divlinks = document.querySelectorAll('div[data-fieldtype="Link"]');
+
+    divlinks.forEach(div => {
+        // find the input inside this div
+        const input = div.querySelector('input[data-fieldtype="Link"]');
+        if (!input) return;
+
+        // get the target Doctype from input
+        const targetDoctype = input.getAttribute("data-target");
+        if (!targetDoctype) return;
+
+        // get the container you want to append the button to
+        const addDiv = div.querySelector('.control-input');
+        if (!addDiv) return;
+
+        const existingBtn = addDiv.querySelector('.add-new-btn');
+        if (existingBtn) return; // skip adding a duplicate
+
+        // create the button
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = "+";
+        btn.classList.add("btn", "btn-xs", "btn-primary", "add-new-btn");
+
+        btn.addEventListener("click", () => {
+            frappe.new_doc(targetDoctype);
+        });
+
+        // apply flex styles
+        addDiv.style.display = "flex";
+        addDiv.style.alignItems = "center";
+        addDiv.style.gap = "0.5em";
+
+        childDiv = addDiv.querySelector('.link-field');
+        childDiv.style.flex = "1";
+
+        // append button
+        addDiv.appendChild(btn);
+    });
+}
+
+
+// Check for link fields on document load
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(() => {
+        checkForLinkFields();
+    }, 500); // Delay to ensure fields are rendered    
+});
+
+frappe.router.on('change', () => {
+    setTimeout(() => {
+        checkForLinkFields();
+    }, 500);
+});

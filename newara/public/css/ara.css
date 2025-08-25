@@ -1,10 +1,12 @@
 :root {
 	--bg-color:  #e5e8eb;
-	--btn-primary: #714B67;
-	--btn-secondary: #017E8480;
-	--secondary: #017E84;
-	--navbar-bg: #714B67;
+	--btn-primary: #1c6de1;
+	--btn-secondary: black;
+	--secondary: #1c6de1;
+	--navbar-bg: #1c6de1;
 	--text-btn-color: white;
+    --text-color: black;
+    --text-muted: black;
 	--table-border-color: #714b6740;
 	--btn-default-hover-bg: white;
 	--sidebar-select-color: #017E8420;
@@ -96,6 +98,32 @@ body, .page-container {
 
 .page-content .layout-main-section{
         background-color: white;
+}
+
+.page-content .layout-side-section{
+    font-size: var(--text-sm);
+    font-weight: var(--weight-regular);
+    letter-spacing: 0.02em;
+    background-color: var(--navbar-bg);
+    padding-right: 30px;
+}
+
+.layout-side-section .sidebar-menu{
+    color: black !important;
+}
+
+.layout-side-section .sidebar-label {
+    font-size: var(--text-xs);
+    font-weight: var(--weight-regular);
+    margin-bottom: var(--margin-sm);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.sidebar-section a, .control-value a, .data-row a {
+    color: white !important;
+    text-decoration: none;
 }
 
 .datatable .dt-cell {
@@ -221,18 +249,18 @@ input[type="checkbox"]:checked {
 
 .btn.btn-primary{
 	color: var(--text-btn-color);
-	border: solid 2px #714b67 !important;
+	/* border: solid 8px #1606f3 !important; */
 }
 
 .btn.btn-primary:hover {
 	background: var(--btn-default-hover-bg) !important;
-	border: solid 2px #714b67 !important;
+	border: solid 2px #1606f3 !important;
 	color: var(--text-color);
   }
 
 .standard-actions .btn.btn-secondary{
 	background: var(--secondary) !important;
-        border: solid 2px var(--secondary) !important;
+    border: solid 2px var(--secondary) !important;
 	color: var(--text-btn-color);
 }
 
@@ -273,14 +301,14 @@ input[type="checkbox"]:checked {
 }
 
 .btn.btn-new-doc{
-	background-color: #714b67 !important;
+	background-color: #1c6de1 !important;
 	color: var(--text-btn-color);
-	border: solid 2px #714b67 !important;
+	border: solid 2px #1c6de1 !important;
 }
 
 .btn.btn-new-doc:hover{
 	background: var(--btn-default-hover-bg) !important;
-	border: solid 2px #714b67 !important;
+	border: solid 2px #1c6de1 !important;
 	color: var(--text-color);
 }
 
@@ -357,6 +385,8 @@ input[type="checkbox"]:checked {
 .dropdown-menu {
 	overflow: visible !important;
 }
+
+
 
 /* #module-nav-container,
 #page-Workspaces > div.page-head.flex > div, .page-head .page-head-content {

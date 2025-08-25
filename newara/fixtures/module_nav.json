@@ -9,7 +9,8 @@
   "name": "4u6hnjttj8",
   "nav_items": [],
   "standard": 1,
-  "workspace": null
+  "workspace": null,
+  "index": 1
  },
  {
   "docstatus": 0,
@@ -21,7 +22,8 @@
   "name": "fqobltdtd5",
   "nav_items": [],
   "standard": 1,
-  "workspace": null
+  "workspace": null,
+  "index": 2
  },
  {
   "docstatus": 0,
@@ -70,7 +72,8 @@
    }
   ],
   "standard": 1,
-  "workspace": null
+  "workspace": null,
+  "index": 3
  },
  {
   "docstatus": 0,
@@ -166,7 +169,8 @@
    }
   ],
   "standard": 1,
-  "workspace": null
+  "workspace": null,
+  "index": 5
  },
  {
   "docstatus": 0,
@@ -216,5 +220,6 @@
   ],
   "standard": 0,
   "workspace": "Accounting"
+
  }
 ]
