@@ -213,10 +213,16 @@ function handleRouteChange() {
 }
 
 function renderMenuItems() {
+
     $('.layout-main-section-wrapper')
 
     $(".layout-main-section").hide();
-    
+
+    const existingId = document.querySelector('#menu-items');
+    if (existingId) {
+        $('#menu-items').show();
+        return; // skip adding a duplicate
+    }    
 
     let body = ''
 		
@@ -337,4 +343,18 @@ frappe.router.on('change', () => {
     setTimeout(() => {
         checkForLinkFields();
     }, 500);
+});
+
+$(window).on('load', function() {
+    frappe.after_ajax(function () {
+        // Remove old newara.css if it exists
+        document.querySelectorAll('link[rel="stylesheet"][href*="newara.css"]').forEach(el => el.remove());
+
+        // Append a fresh one with cache-busting timestamp
+        var newLink = document.createElement("link");
+        newLink.rel = "stylesheet";
+        newLink.type = "text/css";
+        newLink.href = "/assets/newara/css/newara.css?v=" + new Date().getTime();
+        document.head.appendChild(newLink);
+    });
 });
