@@ -79,7 +79,7 @@ app_include_js = "/assets/newara/js/dda.js"
 # ------------
 
 # before_install = "newara.install.before_install"
-# after_install = "newara.install.after_install"
+after_install = "newara.api.after_install"
 
 # Uninstallation
 # ------------
