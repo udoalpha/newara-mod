@@ -372,6 +372,10 @@ input[type="checkbox"]:checked {
 	overflow: visible !important;
 }
 
+li.dropdown.dropdown.dropdown-help.dropdown-mobile {
+	display: none!important;
+}
+
 /* #module-nav-container,
 #page-Workspaces > div.page-head.flex > div, .page-head .page-head-content {
 	height: min-content !important;

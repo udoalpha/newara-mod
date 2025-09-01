@@ -334,9 +334,12 @@ function checkForLinkFields() {
 
 // Check for link fields on document load
 document.addEventListener('DOMContentLoaded', function() {
+    const route = frappe.get_route();
+    
     setTimeout(() => {
         checkForLinkFields();
     }, 500); // Delay to ensure fields are rendered    
+    
 });
 
 frappe.router.on('change', () => {
